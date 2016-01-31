@@ -5,4 +5,3 @@
 ## Reference
 - [Wikipedia](https://en.wikipedia.org/wiki/Monkey)
 - [Science Kids](http://www.sciencekids.co.nz/sciencefacts/animals/monkey.html)
-- [Monkey Worlds](http://www.monkeyworlds.com/)
