@@ -2,11 +2,15 @@
 
 
 /* This is to display borders */
-/*
+/** { border: 1px dotted red }*/
+
+/* Include this, at the beginning of the CSS */
 * {
-  border: 1px dotted red
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-*/
+
 
 /*
   App-wide common styles.
@@ -67,7 +71,6 @@ p {
 }
 li {
   line-height: 1.8em;
-
 }
 img {
   width: 100%;
@@ -86,9 +89,10 @@ img {
 
 nav.top-nav {
   width: 100%;
-  line-height: 80px;
-  height: 80px;
+  line-height: 40px;
+  height: 40px;
   clear: both;
+  background: black;
 }
 #logo,
 #logo a,
@@ -102,9 +106,8 @@ nav.top-nav {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
   float: left;
-}
-.top-nav {
-  border-bottom: 3px solid #2EA3F2;
+  line-height: 40px;
+  height: 40px;
 }
 .top-nav ul {
   display; block;
@@ -118,21 +121,21 @@ nav.top-nav {
   font-size: 0.8em;
   display: inline-block;
   text-align: middle;
-  line-height: 80px;
-  height: 80px;
+  line-height: 40px;
+  height: 40px;
 }
 .top-nav a {
   text-decoration: none;
-  color: black;
+  color: white;
   display: block;
   transition: 0.4s color;
   padding: 0 20px;
 }
 .top-nav a:hover {
-  color: rgba(0, 0, 0, 0.6);
+  color: #2EA3F2;
 }
 .top-nav a.active {
-  color: #2EA3F2;
+  color: #ffffff;
   cursor: default;
   font-weight: bold;
 }
@@ -219,8 +222,6 @@ nav.top-nav {
   }
 
   nav.top-nav {
-    line-height: 60px;
-    height: 60px;
   }
   #logo,
   #logo a,
@@ -234,8 +235,6 @@ nav.top-nav {
   }
   .top-nav li {
     font-size: 0.7em;
-    line-height: 60px;
-    height: 60px;
   }
   .top-nav a {
     padding: 0 8px;
@@ -270,23 +269,20 @@ nav.top-nav {
   }
 
   nav.top-nav {
-    line-height: 40px;
-    height: 40px;
   }
   #logo,
   #logo a,
   #logo a:hover,
   #logo a:active {
     font-size: 0.6em;
+    line-height: 40px;
+    height: 40px;
   }
   .top-nav {
   }
   .top-nav ul {
   }
   .top-nav li {
-    font-size: 0.6em;
-    line-height: 40px;
-    height: 40px;
   }
   .top-nav a {
     padding: 0 5px;
