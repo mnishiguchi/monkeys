@@ -29,23 +29,11 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #676767;
 }
-footer {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background: #272727;
-}
-/* Use this to make building blocks with consistent top and bottom paddings */
-section {
-  display: inline-block;
-  clear: both;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin: 0 0 0 0;
-}
-/* Reset margins and padding so that we can adjust spacing easily. */
+/* Reset some propertyies so that we can adjust spacing easily. */
 h1, h2, h3, h4, p {
   padding: 0;
   margin: 0;
+  line-height: 1;
 }
 h1 {
   font-size: 2.5em;
@@ -87,6 +75,19 @@ img {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+/* Use this to make building blocks with consistent top and bottom paddings */
+section {
+  display: inline-block;
+  clear: both;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0 0 0 0;
+}
+footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #272727;
 }
 
 
@@ -136,6 +137,26 @@ nav.top-nav {
   font-weight: bold;
 }
 
+.thumb-desc-list {
+}
+.thumb-desc-list li {
+  list-style: none;
+  display: block;
+  clear: both;
+  margin-bottom: 20px;
+}
+.thumb-desc-list li img {
+  width: 20%;
+  height: auto;
+  float: left;
+  margin-right: 20px;
+
+}
+.thumb-desc-list li .desc {
+  width: 80%;
+  height: auto;
+  display: table-cell;
+}
 
 /*
   Page contents.
