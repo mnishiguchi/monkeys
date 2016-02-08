@@ -67,3 +67,7 @@ img {
     height: auto;  /* To ensure that image will distort */
 }
 ```
+
+
+### text-overflow
+- https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow
