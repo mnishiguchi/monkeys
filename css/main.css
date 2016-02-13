@@ -2,7 +2,7 @@
 
 
 /* This is to display borders */
-/** { border: 1px dotted red }*/
+* { border: 1px dotted red }
 
 /* Include this, at the beginning of the CSS */
 * {
@@ -81,7 +81,6 @@ img {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  max-width : 1200px
 }
 /* Use this to make building blocks with consistent top and bottom paddings */
 section {
@@ -95,6 +94,9 @@ footer {
   padding-top: 40px;
   padding-bottom: 40px;
   background: #272727;
+}
+.clearfix {
+  clear: both;
 }
 
 
@@ -180,28 +182,15 @@ nav.top-nav {
 }
 
 .intro-col-3 {
+  display: block;
   background: #e7e7e7;
+  margin: 0 -1%;
 }
 .intro-col-3 .card {
   box-sizing: border-box;
-  width: 33.33%;
-  min-height: 100px;
-  margin: 0;
+  width: 31.33%;
+  margin: 0 1%;
   float: left;
-  display: block;
-}
-/* Distribute the x-margins evenly */
-.intro-col-3 .card:nth-child(1) {
-  padding-left: 0;
-  padding-right: 1.8em;
-}
-.intro-col-3 .card:nth-child(2) {
-  padding-left: 0.9em;
-  padding-right: 0.9em;
-}
-.intro-col-3 .card:last-child {
-  padding-left: 1.8em;
-  padding-right: 0;
 }
 .intro-col-3 .card h4 {
 }
@@ -313,17 +302,8 @@ img.classification {
   }
 
   .intro-col-3 .card {
-    width: 100%;
+    width: 98%;
     padding-bottom: 20px;
-  }
-  .intro-col-3 .card:nth-child(1),
-  .intro-col-3 .card:nth-child(2),
-  .intro-col-3 .card:last-child {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .intro-col-3 .card:last-child {
-    padding-bottom: 0;
   }
   .intro-col-3 .card h4 {
   }
